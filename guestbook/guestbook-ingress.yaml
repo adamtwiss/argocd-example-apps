@@ -3,7 +3,8 @@ apiVersion: networking.k8s.io/v1
 metadata:
   name: guestbook  
   annotations:
-    traefik.ingress.kubernetes.io/router.entrypoints: web
+    traefik.ingress.kubernetes.io/router.entrypoints: websecure
+    traefik.ingress.kubernetes.io/router.tls.certResolver: le
 spec:
   rules:
     - host: guestbook.app.atwiss.com
