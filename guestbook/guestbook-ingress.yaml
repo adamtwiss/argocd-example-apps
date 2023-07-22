@@ -6,6 +6,9 @@ metadata:
     traefik.ingress.kubernetes.io/router.entrypoints: websecure
     traefik.ingress.kubernetes.io/router.tls.certResolver: le
 spec:
+  tls: 
+    - hosts:
+      - guestbook.app.atwiss.com
   rules:
     - host: guestbook.app.atwiss.com
       http:
