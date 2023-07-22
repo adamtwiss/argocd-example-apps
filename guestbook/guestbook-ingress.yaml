@@ -5,6 +5,7 @@ metadata:
   annotations:
     traefik.ingress.kubernetes.io/router.entrypoints: websecure
     traefik.ingress.kubernetes.io/router.tls.certResolver: le
+    link.argocd.argoproj.io/external-link: https://guestbook.app.atwiss.com/
 spec:
   tls: 
     - hosts:
