@@ -10,6 +10,7 @@ spec:
   tls: 
     - hosts:
       - guestbook.app.atwiss.com
+      secretName: testsecret-tls
   rules:
     - host: guestbook.app.atwiss.com
       http:
