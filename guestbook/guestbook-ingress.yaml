@@ -8,8 +8,10 @@ metadata:
     link.argocd.argoproj.io/external-link: https://guestbook.app.atwiss.com/
 spec:
   tls: 
+
     - hosts:
       - guestbook.app.atwiss.com
+      secretName: testsecret-tls
   rules:
     - host: guestbook.app.atwiss.com
       http:
